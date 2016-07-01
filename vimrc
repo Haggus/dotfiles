@@ -1,3 +1,9 @@
+"vimrc v0.1"
+
+"General"
+set timeoutlen=1000 ttimeoutlen=0
+
+"Vundle"
 set nocompatible
 filetype off
 
@@ -9,9 +15,17 @@ Plugin 'morhetz/gruvbox'
 call vundle#end()
 filetype plugin indent on
 
-set number
+"Colors & Themes"
 syntax enable
 set background=dark
 colorscheme gruvbox
 
-set timeoutlen=1000 ttimeoutlen=0
+"Numbering"
+set number
+set relativenumber
+
+"Tabs"
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
