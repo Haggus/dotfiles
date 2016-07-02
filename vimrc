@@ -1,4 +1,6 @@
+"=========="
 "vimrc v0.1"
+"=========="
 
 "Leader"
 let mapleader=','
@@ -14,6 +16,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'morhetz/gruvbox'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -32,3 +35,10 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+"======="
+"PLUGINS"
+"======="
+
+"CtrlP"
+set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
