@@ -1,5 +1,8 @@
 "vimrc v0.1"
 
+"Leader"
+let mapleader=','
+
 "General"
 set timeoutlen=1000 ttimeoutlen=0
 
