@@ -6,7 +6,10 @@
 let mapleader=','
 
 "General"
+set modelines=0
 set timeoutlen=1000 ttimeoutlen=0
+set encoding=utf-8
+set scrolloff=8
 
 "Vundle"
 set nocompatible
@@ -35,6 +38,14 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+"Search"
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
 
 "======="
 "PLUGINS"
