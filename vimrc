@@ -42,3 +42,4 @@ set expandtab
 
 "CtrlP"
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
+nnoremap <C-b> :CtrlPBuffer<cr>
