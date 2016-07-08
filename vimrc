@@ -20,6 +20,8 @@ call vundle#begin()
 
 Plugin 'morhetz/gruvbox'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -54,3 +56,6 @@ set hlsearch
 "CtrlP"
 set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
 nnoremap <C-b> :CtrlPBuffer<cr>
+
+"NerdTree"
+nnoremap <C-n> :NERDTreeToggle<cr>
