@@ -59,3 +59,10 @@ nnoremap <C-b> :CtrlPBuffer<cr>
 
 "NerdTree"
 nnoremap <C-n> :NERDTreeToggle<cr>
+
+"========="
+"SHORTCUTS"
+"========="
+
+"Mocha bind"
+nnoremap <C-m> :!mocha<cr>
