@@ -13,9 +13,9 @@
 
 ;; editor
 (setq make-backup-files nil)
-(setq tab-width 4)
+(setq tab-width 2)
 (setq-default indent-tabs-mode nil)
-(set-default-font "Fira Mono Bold 10")
+(set-default-font "Fira Mono Medium 10")
 (setq visible-bell 1)
 (electric-pair-mode 1)
 (show-paren-mode 1)
@@ -230,6 +230,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (require 'flycheck)
 (add-hook 'js-mode-hook
           (lambda () (flycheck-mode t)))
+(setq-default flycheck-disabled-checkers
+  (append flycheck-disabled-checkers
+    '(javascript-jshint)))
+(flycheck-add-mode 'javascript-eslint 'js2-mode)
 
 
 
@@ -248,4 +252,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 
 (custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized))))) ;; start maximized
+  '(js2-basic-offset 2)
+  '(initial-frame-alist (quote ((fullscreen . maximized))))
+) ;; start maximized
