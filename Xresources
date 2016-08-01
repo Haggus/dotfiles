@@ -1,0 +1,24 @@
+URxvt.font: xft:monospace:size=9
+URxvt.scrollBar: false
+
+URxvt.perl-ext-common: fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
+
+URxvt.foreground: rgb:eb/db/b2
+URxvt.background: rgb:28/28/28
+URxvt.color0: rgb:28/28/28
+URxvt.color1: rgb:cc/24/1d
+URxvt.color2: rgb:98/97/1a
+URxvt.color3: rgb:d7/99/21
+URxvt.color4: rgb:45/85/88
+URxvt.color5: rgb:b1/62/86
+URxvt.color6: rgb:68/9d/6a
+URxvt.color7: rgb:a8/99/84
+URxvt.color8: rgb:92/83/74
+URxvt.color9: rgb:fb/49/34
+URxvt.color10: rgb:b8/bb/26
+URxvt.color11: rgb:fa/bd/2f
+URxvt.color12: rgb:83/a5/98
+URxvt.color13: rgb:d3/86/9b
+URxvt.color14: rgb:8e/c0/7c
+URxvt.color15: rgb:eb/db/b2
