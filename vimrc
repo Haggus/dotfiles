@@ -34,6 +34,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'luochen1990/rainbow'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vimwiki/vimwiki'
 
 call vundle#end()
 filetype plugin indent on
