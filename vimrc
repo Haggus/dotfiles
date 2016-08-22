@@ -21,7 +21,6 @@ set visualbell
 set list listchars=tab:»·,trail:·
 
 "Vundle"
-set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -35,6 +34,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'luochen1990/rainbow'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vimwiki/vimwiki'
+Plugin 'scrooloose/syntastic'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -63,7 +64,6 @@ set showmatch
 set hlsearch
 
 "Cursor"
-set ttyfast
 set lazyredraw
 set ruler
 set matchtime=3
@@ -102,6 +102,17 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#whitespace#enabled=1
 let g:airline_theme='gruvbox'
 
+"Syntastic"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
+let g:syntastic_javascript_checkers='eslint'
+
 "========="
 "SHORTCUTS"
 "========="
@@ -112,5 +123,5 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-"Mocha bind"
-nnoremap <C-m> :!mocha<cr>
+"Npm test bind"
+nnoremap <C-m> :!npm run test<cr>
