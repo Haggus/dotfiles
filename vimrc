@@ -20,29 +20,30 @@ set laststatus=2
 set visualbell
 set list listchars=tab:»·,trail:·
 
-"Vundle"
+"vim-plug"
 filetype off
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'morhetz/gruvbox'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'luochen1990/rainbow'
+Plug 'vim-airline/vim-airline'
+Plug 'vimwiki/vimwiki'
+Plug 'scrooloose/syntastic'
+Plug 'rust-lang/rust.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'ntpeters/vim-better-whitespace'
 
-Plugin 'morhetz/gruvbox'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'luochen1990/rainbow'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vimwiki/vimwiki'
-Plugin 'scrooloose/syntastic'
-Plugin 'rust-lang/rust.vim'
-
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 "Colors & Themes"
 syntax enable
 set background=dark
+let g:gruvbox_italic=1
 colorscheme gruvbox
 
 "Numbering"
@@ -111,7 +112,15 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
-let g:syntastic_javascript_checkers='eslint'
+let g:syntastic_javascript_checkers=['eslint']
+
+"Indent Guides"
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=1
+
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 
 "========="
 "SHORTCUTS"

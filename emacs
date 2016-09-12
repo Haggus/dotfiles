@@ -15,7 +15,7 @@
 (setq make-backup-files nil)
 (setq tab-width 2)
 (setq-default indent-tabs-mode nil)
-(set-default-font "Fira Mono Medium 10")
+(set-default-font "DejaVu Sans Mono Medium 9")
 (setq visible-bell 1)
 (electric-pair-mode 1)
 (show-paren-mode 1)
