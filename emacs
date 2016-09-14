@@ -14,6 +14,7 @@
 ;; editor
 (setq make-backup-files nil)
 (setq tab-width 2)
+(setq line-spacing 2)
 (setq-default indent-tabs-mode nil)
 (set-default-font "DejaVu Sans Mono Medium 9")
 (setq visible-bell 1)
@@ -74,6 +75,7 @@
 (require 'evil-org)
 
 (global-evil-tabs-mode t)
+(setq evil-shift-width 2)
 
 (setq evil-leader/in-all-states t)
 (global-evil-leader-mode t)
@@ -178,6 +180,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (add-to-list 'auto-mode-alist '("\\.phtml$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.php$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
   (setq web-mode-code-indent-offset 2)
@@ -218,10 +221,9 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 
 
-;; powerline
-(require-package 'powerline)
-(require 'powerline)
-(powerline-default-theme)
+;; smart-mode-line
+(require-package 'smart-mode-line)
+(sml/setup)
 
 
 
