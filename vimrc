@@ -1,5 +1,5 @@
 "=========="
-"vimrc v0.1"
+"vimrc v0.1.2"
 "=========="
 
 "Leader"
@@ -32,10 +32,15 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vimwiki/vimwiki'
-Plug 'scrooloose/syntastic'
 Plug 'rust-lang/rust.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'airblade/vim-gitgutter'
+Plug 'pangloss/vim-javascript'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'mxw/vim-jsx'
+Plug 'neomake/neomake'
 
 call plug#end()
 filetype plugin indent on
@@ -103,17 +108,6 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#whitespace#enabled=1
 let g:airline_theme='gruvbox'
 
-"Syntastic"
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-let g:syntastic_javascript_checkers=['eslint']
-
 "Indent Guides"
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=1
@@ -132,5 +126,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-"Npm test bind"
-nnoremap <C-m> :!npm run test<cr>
+map <leader>ss :!npm run test<CR>
+map <leader>tn :tabn<CR>
+map <leader>tp :tabp<CR>
+map <leader>tt :tabnew<CR>
