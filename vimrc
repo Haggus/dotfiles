@@ -116,6 +116,9 @@ let g:indent_guides_guide_size=1
 
 let g:indent_guides_auto_colors=0
 
+"Neomake"
+autocmd! BufWritePost,BufEnter * Neomake
+
 "========="
 "SHORTCUTS"
 "========="
@@ -127,6 +130,12 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 map <leader>ss :!npm run test<CR>
+
+"Tabs"
 map <leader>tn :tabn<CR>
 map <leader>tp :tabp<CR>
 map <leader>tt :tabnew<CR>
+
+"Searches"
+map <leader>n :cnext<CR>
+map <leader>N :cprev<CR>
