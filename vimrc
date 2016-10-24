@@ -41,6 +41,7 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'neomake/neomake'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 filetype plugin indent on
@@ -111,10 +112,9 @@ let g:airline_theme='gruvbox'
 "Indent Guides"
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=1
 
 let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=235
 
 "========="
 "SHORTCUTS"
