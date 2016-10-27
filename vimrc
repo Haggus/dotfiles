@@ -1,6 +1,6 @@
-"=========="
-"vimrc v0.1.2"
-"=========="
+"============"
+"vimrc v0.1.3"
+"============"
 
 "Leader"
 let mapleader=','
@@ -29,11 +29,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'luochen1990/rainbow'
-Plug 'vim-airline/vim-airline'
 Plug 'vimwiki/vimwiki'
 Plug 'rust-lang/rust.vim'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
 Plug 'pangloss/vim-javascript'
@@ -41,7 +38,6 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'neomake/neomake'
-Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 filetype plugin indent on
@@ -100,22 +96,6 @@ nnoremap <C-n> :NERDTreeToggle<cr>
 "NerdCommenter"
 map <C-i> <Leader>c<space>
 
-"Rainbow Parentheses Improved
-let g:rainbow_active=1
-
-"Airline"
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#whitespace#enabled=1
-let g:airline_theme='gruvbox'
-
-"Indent Guides"
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_start_level=1
-let g:indent_guides_guide_size=1
-
-let g:indent_guides_auto_colors=0
-
 "Neomake"
 autocmd! BufWritePost,BufEnter * Neomake
 
@@ -123,11 +103,18 @@ autocmd! BufWritePost,BufEnter * Neomake
 "SHORTCUTS"
 "========="
 
+"Quickly exit terminal
+tnoremap <Esc> <C-\><C-n>
+
 "Move between windows"
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 map <leader>ss :!npm run test<CR>
 
