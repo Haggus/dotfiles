@@ -99,6 +99,11 @@ map <C-i> <Leader>c<space>
 "Neomake"
 autocmd! BufWritePost,BufEnter * Neomake
 
+"Vimwiki"
+let g:vimwiki_hl_headers=1
+let g:vimwiki_hl_cb_checked=1
+let g:vimwiki_folding='syntax'
+
 "========="
 "SHORTCUTS"
 "========="
