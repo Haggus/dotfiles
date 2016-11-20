@@ -30,14 +30,12 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vimwiki/vimwiki'
-Plug 'rust-lang/rust.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
-Plug 'pangloss/vim-javascript'
-Plug 'othree/html5.vim'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'mxw/vim-jsx'
 Plug 'neomake/neomake'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 filetype plugin indent on
