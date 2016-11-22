@@ -1,4 +1,4 @@
-URxvt.font: xft:DejaVu Sans Mono:size=9
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=12
 URxvt.scrollBar: false
 
 URxvt.perl-ext-common: fullscreen
