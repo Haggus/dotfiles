@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.1.3"
+"vimrc v0.1.5"
 "============"
 
 "Leader"
@@ -97,6 +97,8 @@ map <C-i> <Leader>c<space>
 
 "Neomake"
 autocmd! BufWritePost,BufEnter * Neomake
+let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
+let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 
 "Vimwiki"
 let g:vimwiki_hl_headers=1
