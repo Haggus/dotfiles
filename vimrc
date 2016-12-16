@@ -45,6 +45,7 @@ syntax enable
 set background=dark
 let g:gruvbox_italic=1
 colorscheme gruvbox
+hi Normal ctermbg=none
 
 "Numbering"
 set number
