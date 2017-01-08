@@ -18,7 +18,8 @@ set wildmenu
 set wildmode=list:longest
 set laststatus=2
 set visualbell
-set list listchars=tab:»·,trail:·
+set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<,space:·
+set list
 
 "vim-plug"
 filetype off
