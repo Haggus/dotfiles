@@ -27,7 +27,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --racer-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vimwiki/vimwiki'
@@ -105,6 +105,9 @@ let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\
 let g:vimwiki_hl_headers=1
 let g:vimwiki_hl_cb_checked=1
 let g:vimwiki_folding='syntax'
+
+"YouCompleteMe"
+let g:ycm_rust_src_path  = '/home/zunimassa/src/rust/src'
 
 "========="
 "SHORTCUTS"
