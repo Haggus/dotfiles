@@ -172,6 +172,9 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (helm-mode 1)
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+(define-key helm-map (kbd "C-j") 'helm-next-line)
+(define-key helm-map (kbd "C-k") 'helm-previous-line)
+
 
 
 ;; web-mode
@@ -204,6 +207,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (require 'js2-mode)
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
+(setq js2-include-node-externs t)
 
 
 
