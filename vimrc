@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.1.5"
+"vimrc v0.1.8"
 "============"
 
 "Leader"
@@ -37,6 +37,10 @@ Plug 'neomake/neomake'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'mileszs/ack.vim'
+Plug 'itchyny/vim-cursorword'
+Plug 'itchyny/calendar.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 filetype plugin indent on
@@ -109,6 +113,15 @@ let g:vimwiki_folding='syntax'
 "YouCompleteMe"
 let g:ycm_rust_src_path  = '/home/zunimassa/src/rust/src'
 
+"Calendar"
+let g:calendar_google_calendar=1
+let g:calendar_google_task=1
+
+"Lightline"
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+
 "========="
 "SHORTCUTS"
 "========="
@@ -136,3 +149,6 @@ map <leader>tt :tabnew<CR>
 "Searches"
 map <leader>n :cnext<CR>
 map <leader>N :cprev<CR>
+
+"Calendar"
+map <leader>ll :Calendar<CR>
