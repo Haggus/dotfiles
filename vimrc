@@ -119,7 +119,7 @@ let g:calendar_google_task=1
 
 "Lightline"
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'gruvbox',
       \ }
 
 "========="
