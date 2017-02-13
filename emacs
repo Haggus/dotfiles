@@ -1,5 +1,5 @@
 ;;
-;; Haggus - emacs 0.1.5
+;; Haggus - emacs 0.1.7
 ;;
 
 
@@ -23,6 +23,16 @@
 (setq show-paren-delay 0)
 (global-hl-line-mode 1)
 
+
+
+;; force utf-8
+(setq locale-coding-system 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(set-selection-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+(when (display-graphic-p)
+   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 
 ;; packages
@@ -135,8 +145,8 @@
   "k"  'kill-buffer
   "w"  'delete-window
   "cd" 'cd
-  "s"  'magit-status
-  "f"  'projectile-find-file)
+  "f"  'projectile-find-file
+  "gg"  'magit-status)
 
 (evilnc-default-hotkeys)
 
@@ -160,6 +170,13 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 (global-set-key [escape] 'evil-exit-emacs-state)
+
+
+
+;; org
+(require-package 'org-bullets)
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 
 
