@@ -3,3 +3,5 @@
 --color
 --smart-case
 --ignore-dir=node_modules
+--ignore-dir=platforms
+--ignore-dir=www
