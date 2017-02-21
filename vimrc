@@ -20,6 +20,7 @@ set laststatus=2
 set visualbell
 set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<,space:·
 set list
+set backupcopy=yes
 
 "vim-plug"
 filetype off
@@ -41,6 +42,7 @@ Plug 'itchyny/vim-cursorword'
 Plug 'itchyny/calendar.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'chrisbra/Colorizer'
 
 call plug#end()
 filetype plugin indent on
@@ -57,9 +59,9 @@ set number
 set relativenumber
 
 "Tabs"
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 "Search"
@@ -122,6 +124,9 @@ let g:lightline = {
       \ 'colorscheme': 'gruvbox',
       \ }
 
+"Colorizer"
+let g:colorizer_auto_filetype='css,html'
+
 "========="
 "SHORTCUTS"
 "========="
@@ -139,7 +144,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-map <leader>ss :!npm run test<CR>
+"Git"
+map <leader>gg :Gstatus<CR>
+map <leader>gf :Git! diff<CR>
+map <leader>gs :Git! diff --staged<CR>
+map <leader>gc :Gcommit<CR>
 
 "Tabs"
 map <leader>tn :tabn<CR>
