@@ -61,8 +61,8 @@
    dotspacemacs-themes '(base16-tomorrow-night
                          spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '("Monospace"
+                               :size 12
                                :weight medium
                                :width normal
                                :powerline-scale 1.1)
@@ -101,7 +101,7 @@
    dotspacemacs-folding-method 'evil
    dotspacemacs-smartparens-strict-mode nil
    dotspacemacs-smart-closing-parenthesis nil
-   dotspacemacs-highlight-delimiters 'all
+   dotspacemacs-highlight-delimiters nil
    dotspacemacs-persistent-server nil
    dotspacemacs-search-tools '("ag" "pt" "ack" "grep")
    dotspacemacs-default-package-repository nil
