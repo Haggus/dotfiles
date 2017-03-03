@@ -5,3 +5,4 @@
 --ignore-dir=node_modules
 --ignore-dir=platforms
 --ignore-dir=www
+--ignore-dir=dist
