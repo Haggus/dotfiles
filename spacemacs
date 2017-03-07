@@ -29,6 +29,7 @@
      shell-scripts
      (spell-checking :variables
                      spell-checking-enable-by-default nil)
+     sql
      syntax-checking
      version-control)
 
@@ -75,6 +76,7 @@
    dotspacemacs-major-mode-emacs-leader-key "C-M-m"
 
    dotspacemacs-remap-Y-to-y$ t
+   dotspacemacs-retain-visual-state-on-shift nil
    dotspacemacs-large-file-size 2
    dotspacemacs-auto-save-file-location 'cache
    dotspacemacs-max-rollback-slots 5
