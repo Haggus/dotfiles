@@ -30,6 +30,7 @@
      (spell-checking :variables
                      spell-checking-enable-by-default nil)
      sql
+     themes-megapack
      syntax-checking
      version-control
      yaml)
@@ -119,6 +120,8 @@
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code."
+    ;; Temporary fix for theme. Waiting until it lands on master.
+    (spacemacs/load-theme 'gruvbox)
     (setq powerline-default-separator 'bar)
 
     (add-hook 'css-mode-hook 'turn-on-rainbow-mode)
