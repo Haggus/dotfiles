@@ -31,7 +31,8 @@
                      spell-checking-enable-by-default nil)
      sql
      syntax-checking
-     version-control)
+     version-control
+     yaml)
 
    dotspacemacs-additional-packages '()
    dotspacemacs-frozen-packages '()
