@@ -25,7 +25,7 @@
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom
-            shell-default-shell 'eshell)
+            shell-default-shell 'multiterm)
      shell-scripts
      (spell-checking :variables
                      spell-checking-enable-by-default nil)
