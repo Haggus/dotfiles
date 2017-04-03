@@ -113,10 +113,10 @@
 
 (defun dotspacemacs/user-init ()
   "Initialization function for user code."
-
   (setq-default
    vc-follow-symlinks t
-   require-final-newline t))
+   require-final-newline t)
+  (setq js2-include-node-externs t))
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code."
