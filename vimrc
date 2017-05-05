@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.1.8"
+"vimrc v0.1.9"
 "============"
 
 "Leader"
@@ -18,7 +18,7 @@ set wildmenu
 set wildmode=list:longest
 set laststatus=2
 set visualbell
-set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<,space:·
+set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<
 set list
 set backupcopy=yes
 
@@ -43,6 +43,7 @@ Plug 'itchyny/calendar.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 filetype plugin indent on
