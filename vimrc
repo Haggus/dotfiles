@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.1.9"
+"vimrc v0.2.0"
 "============"
 
 "Leader"
@@ -44,6 +44,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
+Plug 'jtdowney/vimux-cargo'
 
 call plug#end()
 filetype plugin indent on
@@ -127,6 +129,16 @@ let g:lightline = {
 
 "Colorizer"
 let g:colorizer_auto_filetype='css,html'
+
+"Vimux"
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vz :VimuxZoomRunner<CR>
+
+map <Leader>rr :wa<CR> :CargoRun<CR>
+map <Leader>ra :wa<CR> :CargoTestAll<CR>
+map <Leader>rt :wa<CR> :CargoUnitTestCurrentFile<CR>
+map <Leader>rf :wa<CR> :CargoUnitTestFocused<CR>
 
 "========="
 "SHORTCUTS"
