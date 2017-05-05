@@ -127,6 +127,12 @@ let g:lightline = {
 "Colorizer"
 let g:colorizer_auto_filetype='css,html'
 
+"Ack"
+map <leader>s :Ack 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 "========="
 "SHORTCUTS"
 "========="
