@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.1.8"
+"vimrc v0.2.0"
 "============"
 
 "Leader"
@@ -18,7 +18,7 @@ set wildmenu
 set wildmode=list:longest
 set laststatus=2
 set visualbell
-set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<,space:·
+set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<
 set list
 set backupcopy=yes
 
@@ -43,6 +43,9 @@ Plug 'itchyny/calendar.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'chrisbra/Colorizer'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'benmills/vimux'
+Plug 'jtdowney/vimux-cargo'
 
 call plug#end()
 filetype plugin indent on
@@ -137,6 +140,16 @@ map <leader>s :Ack
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+"Vimux"
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vz :VimuxZoomRunner<CR>
+
+map <Leader>rr :wa<CR> :CargoRun<CR>
+map <Leader>ra :wa<CR> :CargoTestAll<CR>
+map <Leader>rt :wa<CR> :CargoUnitTestCurrentFile<CR>
+map <Leader>rf :wa<CR> :CargoUnitTestFocused<CR>
 
 "========="
 "SHORTCUTS"
