@@ -122,7 +122,12 @@ let g:calendar_google_task=1
 "Lightline"
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',
-      \ }
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+  \ }
 
 "Colorizer"
 let g:colorizer_auto_filetype='css,html'
