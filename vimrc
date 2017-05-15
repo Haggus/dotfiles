@@ -117,6 +117,8 @@ let g:vimwiki_folding='syntax'
 
 "YouCompleteMe"
 let g:ycm_rust_src_path  = '/home/zunimassa/src/rust/src'
+nnoremap <leader>gg :YcmCompleter GoTo<CR>
+nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 "Calendar"
 let g:calendar_google_calendar=1
