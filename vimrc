@@ -171,9 +171,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 "Git"
-map <leader>gg :Gstatus<CR>
+map <leader>gs :Gstatus<CR>
 map <leader>gf :Git! diff<CR>
-map <leader>gs :Git! diff --staged<CR>
+map <leader>gt :Git! diff --staged<CR>
 map <leader>gc :Gcommit<CR>
 
 "Tabs"
