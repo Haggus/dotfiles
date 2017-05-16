@@ -65,7 +65,7 @@
                          spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
    dotspacemacs-default-font '("Monospace"
-                               :size 12
+                               :size 14
                                :weight medium
                                :width normal
                                :powerline-scale 1.1)
