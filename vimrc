@@ -28,7 +28,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --racer-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --racer-completer --clang-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vimwiki/vimwiki'
