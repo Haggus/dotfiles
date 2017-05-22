@@ -120,6 +120,8 @@ let g:lightline = {
 let g:colorizer_auto_filetype='css,html'
 
 "FZF"
+command! -bang -nargs=* Ag
+  \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview('right:50%'), <bang>0)
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
