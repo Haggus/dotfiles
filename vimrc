@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.2.0"
+"vimrc v0.3.0"
 "============"
 
 "Leader"
@@ -27,7 +27,6 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --racer-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
@@ -37,7 +36,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'neomake/neomake'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
-Plug 'mileszs/ack.vim'
 Plug 'itchyny/vim-cursorword'
 Plug 'itchyny/calendar.vim'
 Plug 'itchyny/lightline.vim'
@@ -87,25 +85,9 @@ set wrap
 set linebreak
 set showbreak=¬
 
-"Disable Arrows"
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-
 "======="
 "PLUGINS"
 "======="
-
-"CtrlP"
-set wildignore+=*/tmp/*,*/node_modules/*,*.so,*.swp,*.zip
-nnoremap <C-b> :CtrlPBuffer<cr>
-
-"NerdTree"
-nnoremap <C-n> :NERDTreeToggle<cr>
-
-"NerdCommenter"
-map <C-i> <Leader>c<space>
 
 "Neomake"
 autocmd! BufWritePost,BufEnter * Neomake
@@ -119,8 +101,6 @@ let g:vimwiki_folding='syntax'
 
 "YouCompleteMe"
 let g:ycm_rust_src_path  = '/home/zunimassa/src/rust/src'
-nnoremap <leader>gg :YcmCompleter GoTo<CR>
-nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 "Calendar"
 let g:calendar_google_calendar=1
@@ -139,28 +119,21 @@ let g:lightline = {
 "Colorizer"
 let g:colorizer_auto_filetype='css,html'
 
-"Ack"
-map <leader>s :Ack 
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
-"Vimux"
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
-map <Leader>vz :VimuxZoomRunner<CR>
-
-map <Leader>rr :wa<CR> :CargoRun<CR>
-map <Leader>ra :wa<CR> :CargoTestAll<CR>
-map <Leader>rt :wa<CR> :CargoUnitTestCurrentFile<CR>
-map <Leader>rf :wa<CR> :CargoUnitTestFocused<CR>
-
 "========="
-"SHORTCUTS"
+"KEYBINDINGS"
 "========="
 
-"Quickly exit terminal
-tnoremap <Esc> <C-\><C-n>
+"Disable Arrows"
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
+"NerdTree"
+nnoremap <C-n> :NERDTreeToggle<cr>
+
+"NerdCommenter"
+map <C-i> <leader>c<space>
 
 "Move between windows"
 nnoremap <C-h> <C-w>h
@@ -173,6 +146,7 @@ map <leader>gs :Gstatus<CR>
 map <leader>gf :Git! diff<CR>
 map <leader>gt :Git! diff --staged<CR>
 map <leader>gc :Gcommit<CR>
+map <leader>gl :Commits<CR>
 
 "Tabs"
 map <leader>tn :tabn<CR>
@@ -185,3 +159,22 @@ map <leader>N :cprev<CR>
 
 "Calendar"
 map <leader>ll :Calendar<CR>
+
+"FZF"
+map <leader>f :GFiles<CR>
+map <leader>b :Buffers<CR>
+map <leader>/ :Ag<CR>
+
+"YouCompleteMe"
+nnoremap <leader>gg :YcmCompleter GoTo<CR>
+nnoremap <leader>gd :YcmCompleter GetDoc<CR>
+
+"Vimux"
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vz :VimuxZoomRunner<CR>
+
+map <Leader>rr :wa<CR> :CargoRun<CR>
+map <Leader>ra :wa<CR> :CargoTestAll<CR>
+map <Leader>rt :wa<CR> :CargoUnitTestCurrentFile<CR>
+map <Leader>rf :wa<CR> :CargoUnitTestFocused<CR>
