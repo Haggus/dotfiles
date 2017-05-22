@@ -72,6 +72,7 @@ set ignorecase
 set smartcase
 set gdefault
 set incsearch
+set inccommand=split
 set showmatch
 set hlsearch
 
