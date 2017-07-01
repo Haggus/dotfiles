@@ -46,6 +46,7 @@ Plug 'benmills/vimux'
 Plug 'jtdowney/vimux-cargo'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'vimoutliner/vimoutliner'
 
 call plug#end()
 filetype plugin indent on
@@ -62,9 +63,9 @@ set number
 set relativenumber
 
 "Tabs"
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 "Search"
