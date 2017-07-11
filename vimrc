@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.3.0"
+"vimrc v0.3.1"
 "============"
 
 "Leader"
@@ -62,9 +62,9 @@ set number
 set relativenumber
 
 "Tabs"
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 "Search"
@@ -179,7 +179,7 @@ map <leader>N :cprev<CR>
 map <leader>ll :Calendar<CR>
 
 "FZF"
-map <leader>f :GFiles<CR>
+map <leader>f :Files<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 
