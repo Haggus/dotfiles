@@ -47,6 +47,7 @@ Plug 'jtdowney/vimux-cargo'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'vimoutliner/vimoutliner'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 filetype plugin indent on
