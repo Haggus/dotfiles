@@ -13,6 +13,7 @@
    '(auto-completion
      better-defaults
      colors
+     c-c++
      emacs-lisp
      git
      github
@@ -21,6 +22,7 @@
      javascript
      markdown
      org
+     react
      rust
      (shell :variables
             shell-default-height 30
@@ -65,7 +67,7 @@
                          spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
    dotspacemacs-default-font '("Monospace"
-                               :size 14
+                               :size 15
                                :weight medium
                                :width normal
                                :powerline-scale 1.1)
