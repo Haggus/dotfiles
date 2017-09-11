@@ -179,6 +179,7 @@ map <leader>gf :Git! diff<CR>
 map <leader>gt :Git! diff --staged<CR>
 map <leader>gc :Gcommit<CR>
 map <leader>gl :Commits<CR>
+map <leader>gp :Gpush<CR>
 
 "Tabs"
 map <leader>tn :tabn<CR>
