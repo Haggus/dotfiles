@@ -1,0 +1,16 @@
+[user]
+  email = matt.mrowiec@gmail.com
+  name = Mateusz Mrowiec
+[push]
+  default = simple
+[core]
+  editor = nvim
+[alias]
+  ci = commit
+  ss = status -sb
+  st = status
+  ff = diff
+  fs = diff --staged
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+[interactive]
+  singleKey = true
