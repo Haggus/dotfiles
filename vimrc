@@ -135,6 +135,9 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+"Pretty JSON"
+command! PrettyJSON %!python -m json.tool
+
 "========="
 "KEYBINDINGS"
 "========="
