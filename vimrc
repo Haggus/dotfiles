@@ -59,22 +59,6 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 hi Normal ctermbg=none
 
-"Numbering"
-set number
-set relativenumber
-
-augroup linenumbers
-  autocmd!
-  autocmd BufEnter *    :set relativenumber
-  autocmd BufLeave *    :set number norelativenumber
-  autocmd WinEnter *    :set relativenumber
-  autocmd WinLeave *    :set number norelativenumber
-  autocmd InsertEnter * :set number norelativenumber
-  autocmd InsertLeave * :set relativenumber
-  autocmd FocusLost *   :set number norelativenumber
-  autocmd FocusGained * :set relativenumber
-augroup END
-
 "Tabs"
 set tabstop=2
 set shiftwidth=2
