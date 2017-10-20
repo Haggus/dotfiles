@@ -22,6 +22,7 @@
      javascript
      markdown
      org
+     ranger
      react
      rust
      (shell :variables
