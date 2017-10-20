@@ -63,10 +63,10 @@
    dotspacemacs-startup-buffer-responsive t
    dotspacemacs-scratch-mode 'text-mode
 
-   dotspacemacs-themes '(base16-tomorrow-night
+   dotspacemacs-themes '(gruvbox
                          spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
-   dotspacemacs-default-font '("Monospace"
+   dotspacemacs-default-font '("Liberation Mono"
                                :size 15
                                :weight medium
                                :width normal
@@ -123,7 +123,6 @@
 (defun dotspacemacs/user-config ()
   "Configuration function for user code."
     ;; Temporary fix for theme. Waiting until it lands on master.
-    (spacemacs/load-theme 'gruvbox)
     (setq powerline-default-separator 'bar)
 
     (add-hook 'css-mode-hook 'turn-on-rainbow-mode)
@@ -131,17 +130,17 @@
        (rainbow-mode t))
 
     (setq
-     js2-basic-offset 4
+     js2-basic-offset 2
      js2-strict-trailing-comma-warning nil
 
-     css-indent-offset 4
+     css-indent-offset 2
 
-     web-mode-markup-indent-offset 4
-     web-mode-css-indent-offset 4
-     web-mode-code-indent-offset 4
-     web-mode-attr-indent-offset 4
+     web-mode-markup-indent-offset 2
+     web-mode-css-indent-offset 2
+     web-mode-code-indent-offset 2
+     web-mode-attr-indent-offset 2
 
-     tab-width 4
+     tab-width 2
      indent-tabs-mode nil)
 
     (spacemacs/toggle-transparency))
