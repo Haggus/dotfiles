@@ -95,7 +95,7 @@
 
    dotspacemacs-loading-progress-bar t
    dotspacemacs-maximized-at-startup t
-   dotspacemacs-active-transparency 95
+   dotspacemacs-active-transparency 97
    dotspacemacs-inactive-transparency 95
 
    dotspacemacs-show-transient-state-title t
