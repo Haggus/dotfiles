@@ -48,6 +48,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'vimoutliner/vimoutliner'
 Plug 'tpope/vim-surround'
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 filetype plugin indent on
@@ -135,8 +136,9 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-"Pretty JSON"
-command! PrettyJSON %!python -m json.tool
+"Neoformat"
+let g:neoformat_try_formatprg = 1
+autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5
 
 "========="
 "KEYBINDINGS"
