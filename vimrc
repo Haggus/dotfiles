@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.3.1"
+"vimrc v0.3.2"
 "============"
 
 "Leader"
@@ -74,6 +74,7 @@ set incsearch
 set inccommand=split
 set showmatch
 set hlsearch
+set magic
 
 "Cursor"
 set lazyredraw
@@ -200,3 +201,6 @@ map <Leader>rr :wa<CR> :CargoRun<CR>
 map <Leader>ra :wa<CR> :CargoTestAll<CR>
 map <Leader>rt :wa<CR> :CargoUnitTestCurrentFile<CR>
 map <Leader>rf :wa<CR> :CargoUnitTestFocused<CR>
+
+"Neoformat"
+map <Leader>m :Neoformat<CR>
