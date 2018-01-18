@@ -131,6 +131,7 @@
        (rainbow-mode t))
 
     (setq
+     js-indent-level 2
      js2-basic-offset 2
      js2-strict-trailing-comma-warning nil
 
