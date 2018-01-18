@@ -33,7 +33,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'vimwiki/vimwiki'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'airblade/vim-gitgutter'
-Plug 'neomake/neomake'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
@@ -50,6 +49,7 @@ Plug 'vimoutliner/vimoutliner'
 Plug 'tpope/vim-surround'
 Plug 'sbdchd/neoformat'
 Plug 'jreybert/vimagit'
+Plug 'w0rp/ale'
 
 call plug#end()
 filetype plugin indent on
@@ -91,11 +91,6 @@ set showbreak=¬
 "PLUGINS"
 "======="
 
-"Neomake"
-autocmd! BufWritePost,BufEnter * Neomake
-let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
-let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
-
 "Vimwiki"
 let g:vimwiki_hl_headers=1
 let g:vimwiki_hl_cb_checked=1
@@ -117,9 +112,6 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
   \ }
-
-"Colorizer"
-let g:colorizer_auto_filetype='css,html'
 
 "FZF"
 command! -bang -nargs=* Ag
