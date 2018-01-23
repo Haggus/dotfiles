@@ -1,20 +1,15 @@
 {
-  "ecmaVersion": 6,
   "libs": [
     "browser",
-    "jquery"
-  ],
-  "dontLoad": [
-    "node_modules/**"
+    "chai",
+    "react",
+    "ecmascript"
   ],
   "plugins": {
-    "modules": {},
-    "es_modules": {},
     "node": {},
-    "angular": {},
-    "doc_comment": {
-      "fullDocs": true,
-      "strong": true
-    }
+    "complete_strings": {},
+    "doc_comment": {},
+    "es_modules": {},
+    "webpack": {}
   }
 }
