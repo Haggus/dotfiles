@@ -27,7 +27,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --racer-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer --rust-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vimwiki/vimwiki'
@@ -102,7 +102,7 @@ let g:vimwiki_hl_cb_checked=1
 let g:vimwiki_folding='syntax'
 
 "YouCompleteMe"
-let g:ycm_rust_src_path  = '/home/zunimassa/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+let g:ycm_rust_src_path  = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 
 "Calendar"
 let g:calendar_google_calendar=1
