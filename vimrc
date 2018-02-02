@@ -18,7 +18,7 @@ set wildmenu
 set wildmode=list:longest
 set laststatus=2
 set visualbell
-set listchars=eol:¬,tab:»·,trail:·,extends:>,precedes:<
+set listchars=tab:»·,trail:·,extends:>,precedes:<
 set list
 set backupcopy=yes
 
