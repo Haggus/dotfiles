@@ -157,12 +157,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 "Git"
-map <leader>gs :Gstatus<CR>
 map <leader>gf :Git! diff<CR>
 map <leader>gt :Git! diff --staged<CR>
-map <leader>gc :Gcommit<CR>
-map <leader>gl :Commits<CR>
-map <leader>gp :Gpush<CR>
 
 "Tabs"
 map <leader>tn :tabn<CR>
@@ -180,6 +176,8 @@ map <leader>ll :Calendar<CR>
 map <leader>f :Files<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
+map <leader>gs :GFiles?<CR>
+map <leader>gl :Commits<CR>
 
 "YouCompleteMe"
 nnoremap <leader>gg :YcmCompleter GoTo<CR>
