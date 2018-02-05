@@ -177,7 +177,7 @@ map <leader>f :Files<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 map <leader>gs :GFiles?<CR>
-map <leader>gl :Commits<CR>
+map <leader>gl :BCommits<CR>
 
 "YouCompleteMe"
 nnoremap <leader>gg :YcmCompleter GoTo<CR>
