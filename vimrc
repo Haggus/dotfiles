@@ -159,6 +159,7 @@ nnoremap <C-l> <C-w>l
 "Git"
 map <leader>gf :Git! diff<CR>
 map <leader>gt :Git! diff --staged<CR>
+map <leader>gb :Gblame<CR>
 
 "Tabs"
 map <leader>tn :tabn<CR>
@@ -178,6 +179,7 @@ map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 map <leader>gs :GFiles?<CR>
 map <leader>gl :BCommits<CR>
+map <leader>c :Commands<CR>
 
 "YouCompleteMe"
 nnoremap <leader>gg :YcmCompleter GoTo<CR>
