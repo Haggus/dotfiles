@@ -137,6 +137,9 @@ let g:fzf_colors =
 let g:neoformat_try_formatprg = 1
 autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5
 
+"Vimwiki
+let g:vimwiki_list = [{'path': '~/Private/wiki', 'path_html': '~/Private/wiki_html'}]
+
 "========="
 "KEYBINDINGS"
 "========="
