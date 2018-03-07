@@ -6,7 +6,7 @@ export ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="afowler"
 
 plugins=(
-  git tmux mercurial
+  git tmux nvm mercurial
 )
 
 source $ZSH/oh-my-zsh.sh
