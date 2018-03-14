@@ -5,7 +5,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="afowler"
 
 plugins=(
-  git tmux mercurial
+  git tmux nvm mercurial
 )
 
 source $ZSH/oh-my-zsh.sh
