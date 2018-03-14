@@ -1,7 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH=~/.oh-my-zsh
-export ZSH_TMUX_AUTOSTART=true
 
 ZSH_THEME="afowler"
 
