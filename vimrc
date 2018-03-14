@@ -180,7 +180,8 @@ map <leader>N :cprev<CR>
 map <leader>ll :Calendar<CR>
 
 "FZF"
-map <leader>f :Files<CR>
+map <leader>f :GFiles<CR>
+map <leader>F :Files<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 map <leader>gs :GFiles?<CR>
