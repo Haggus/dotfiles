@@ -178,6 +178,8 @@ map <leader>N :cprev<CR>
 "FZF"
 map <leader>f :GFiles<CR>
 map <leader>F :Files<CR>
+map <leader>ll :BLines<CR>
+map <leader>L :Lines<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 map <leader>gs :GFiles?<CR>
