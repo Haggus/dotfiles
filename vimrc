@@ -94,13 +94,10 @@ set showbreak=¬
 let g:vimwiki_hl_headers=1
 let g:vimwiki_hl_cb_checked=1
 let g:vimwiki_folding='syntax'
+let g:vimwiki_list = [{'path': '~/Private/wiki', 'path_html': '~/Private/wiki_html'}]
 
 "YouCompleteMe"
 let g:ycm_rust_src_path  = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
-
-"Calendar"
-let g:calendar_google_calendar=1
-let g:calendar_google_task=1
 
 "Lightline"
 let g:lightline = {
@@ -135,9 +132,6 @@ let g:fzf_colors =
 "Neoformat"
 let g:neoformat_try_formatprg = 1
 autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5
-
-"Vimwiki
-let g:vimwiki_list = [{'path': '~/Private/wiki', 'path_html': '~/Private/wiki_html'}]
 
 "========="
 "KEYBINDINGS"
