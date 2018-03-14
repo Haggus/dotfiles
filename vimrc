@@ -36,7 +36,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
-Plug 'itchyny/calendar.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'gko/vim-coloresque'
@@ -175,9 +174,6 @@ map <leader>tt :tabnew<CR>
 "Searches"
 map <leader>n :cnext<CR>
 map <leader>N :cprev<CR>
-
-"Calendar"
-map <leader>ll :Calendar<CR>
 
 "FZF"
 map <leader>f :GFiles<CR>
