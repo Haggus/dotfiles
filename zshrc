@@ -31,4 +31,11 @@ alias mutt="neomutt"
 alias ra="ranger"
 alias gs="git status"
 
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+  ssh-agent > ~/.ssh-agent-id
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+  eval "$(<~/.ssh-agent-id)"
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
