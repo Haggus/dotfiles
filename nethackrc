@@ -13,6 +13,7 @@ OPTIONS=showexp
 OPTIONS=lit_corridor
 OPTIONS=hitpointbar
 OPTIONS=msghistory:50
+OPTIONS=msg_window:reversed
 
 # Ensure changes will be shown for a few turns after they happen.
 OPTIONS=statushilites:10
