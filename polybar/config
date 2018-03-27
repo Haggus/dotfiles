@@ -45,8 +45,9 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
+font-3 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid,Book;1
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = 
 modules-right = filesystem xbacklight volume memory cpu battery date powermenu
 
@@ -340,9 +341,9 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-close = 
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
