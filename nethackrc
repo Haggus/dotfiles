@@ -51,6 +51,12 @@ OPTIONS=hilite_status:hitpoints/<100%/green
 OPTIONS=hilite_status:hitpoints/<60%/yellow
 OPTIONS=hilite_status:hitpoints/<40%/red
 
+# Percentage cutoffs for power.
+OPTIONS=hilite_status:power/100%/brightgreen
+OPTIONS=hilite_status:power/<100%/green
+OPTIONS=hilite_status:power/<60%/yellow
+OPTIONS=hilite_status:power/<40%/red
+
 # Hilight hunger statuses
 OPTIONS=hilite_status:hunger/0/green
 OPTIONS=hilite_status:hunger/2/yellow
