@@ -21,10 +21,9 @@ OPTIONS=statushilites:10
 # Always show gold as the proper color.
 OPTIONS=hilite_status:gold/always/yellow
 
-# Show when the character is Lawful, for some reason.
 OPTIONS=hilite_status:alignment/lawful/green&bold
-# the above line is equivalent to:
-OPTIONS=hilite_status:alignment/lawful/lightgreen
+OPTIONS=hilite_status:alignment/neutral/yellow&bold
+OPTIONS=hilite_status:alignment/chaotic/red&bold
 
 # Show when XL changes.
 OPTIONS=hilite_status:experience-level/changed/white/cyan
