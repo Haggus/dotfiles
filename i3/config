@@ -151,6 +151,9 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+# Toggle window as sticky
+bindsym $mod+Shift+s sticky toggle
+
 bindsym $mod+q exec xscreensaver-command -lock
 
 exec killall -q fsnotify_mark
