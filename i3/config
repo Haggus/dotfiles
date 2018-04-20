@@ -154,11 +154,10 @@ bindsym $mod+minus scratchpad show
 # Toggle window as sticky
 bindsym $mod+Shift+s sticky toggle
 
-bindsym $mod+q exec xscreensaver-command -lock
+bindsym $mod+q exec $HOME/.config/i3/lock.sh
 
 exec killall -q fsnotify_mark
 
-exec --no-startup-id xscreensaver -no-splash &
 exec --no-startup-id compton -bc &
 exec --no-startup-id dunst
 
