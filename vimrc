@@ -47,8 +47,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'vimoutliner/vimoutliner'
 Plug 'tpope/vim-surround'
 Plug 'sbdchd/neoformat'
-Plug 'jreybert/vimagit'
 Plug 'w0rp/ale'
+Plug 'rhysd/committia.vim'
 
 call plug#end()
 filetype plugin indent on
