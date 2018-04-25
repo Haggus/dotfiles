@@ -49,6 +49,7 @@ Plug 'tpope/vim-surround'
 Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
 Plug 'rhysd/committia.vim'
+Plug 'hotwatermorning/auto-git-diff'
 
 call plug#end()
 filetype plugin indent on
