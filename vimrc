@@ -21,6 +21,8 @@ set visualbell
 set listchars=tab:»·,trail:·,extends:>,precedes:<
 set list
 set backupcopy=yes
+set undofile
+set undodir=~/.vim/undodir
 
 "vim-plug"
 filetype off
