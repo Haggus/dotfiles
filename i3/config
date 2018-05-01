@@ -4,7 +4,7 @@
 
 set $mod Mod4
 
-new_window none
+new_window pixel 1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -140,7 +140,7 @@ set $aqua #8ec07c
 set $gray #a89984
 set $darkgray #1d2021
 
-client.focused          $green $green $darkgray $purple $darkgray
+client.focused          $green $green $darkgray $purple $green
 client.focused_inactive $darkgray $darkgray $green $purple $darkgray
 client.unfocused        $darkgray $darkgray $green $purple $darkgray
 client.urgent           $red $red $white $red $red
@@ -155,8 +155,6 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+s sticky toggle
 
 bindsym $mod+q exec $HOME/.config/i3/lock.sh
-
-exec killall -q fsnotify_mark
 
 exec --no-startup-id compton -bc &
 exec --no-startup-id dunst
