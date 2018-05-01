@@ -52,6 +52,7 @@ Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
 Plug 'rhysd/committia.vim'
 Plug 'hotwatermorning/auto-git-diff'
+Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 filetype plugin indent on
