@@ -137,6 +137,11 @@ let g:fzf_colors =
 let g:neoformat_try_formatprg = 1
 autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5
 
+"Polyglot"
+" graphql is causing issues when editing js files
+" https://github.com/sheerun/vim-polyglot/issues/303
+let g:polyglot_disabled = ['graphql']
+
 "========="
 "KEYBINDINGS"
 "========="
