@@ -63,6 +63,7 @@ set background=dark
 let g:gruvbox_italic=1
 colorscheme gruvbox
 hi Normal ctermbg=none
+hi CursorLine ctermbg=236
 
 "Tabs"
 set tabstop=2
@@ -84,6 +85,7 @@ set magic
 set lazyredraw
 set ruler
 set matchtime=3
+set cursorline
 
 "Better Line Wraps"
 set wrap
