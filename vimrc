@@ -147,6 +147,9 @@ nnoremap <down> <nop>
 nnoremap <left> <nop>
 nnoremap <right> <nop>
 
+"Quickly clear selection highlight"
+nmap <Esc><Esc> :noh<CR>
+
 "NerdTree"
 nnoremap <C-n> :NERDTreeToggle<cr>
 
