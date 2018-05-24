@@ -38,7 +38,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
-Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'gko/vim-coloresque'
 Plug 'christoomey/vim-tmux-navigator'
@@ -104,14 +103,6 @@ let g:vimwiki_list = [{'path': '~/Private/wiki', 'path_html': '~/Private/wiki_ht
 
 "YouCompleteMe"
 let g:ycm_rust_src_path  = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
-
-"Lightline"
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'component': {
-      \   'readonly': '%{&readonly?"":""}',
-      \ },
-  \ }
 
 "FZF"
 command! -bang -nargs=* Ag
