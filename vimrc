@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.3.2"
+"vimrc v0.4.0"
 "============"
 
 "Leader"
@@ -42,15 +42,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'gko/vim-coloresque'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
-Plug 'jtdowney/vimux-cargo'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'vimoutliner/vimoutliner'
 Plug 'tpope/vim-surround'
-Plug 'sbdchd/neoformat'
 Plug 'w0rp/ale'
-Plug 'rhysd/committia.vim'
-Plug 'hotwatermorning/auto-git-diff'
 Plug 'slashmili/alchemist.vim'
 
 call plug#end()
@@ -124,10 +119,6 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-"Neoformat"
-let g:neoformat_try_formatprg = 1
-autocmd FileType javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --trailing-comma\ es5
-
 "========="
 "KEYBINDINGS"
 "========="
@@ -162,6 +153,7 @@ map <leader>gb :Gblame<CR>
 map <leader>tn :tabn<CR>
 map <leader>tp :tabp<CR>
 map <leader>tt :tabnew<CR>
+map <leader>tc :tabclose<CR>
 
 "Searches"
 map <leader>n :cnext<CR>
@@ -186,11 +178,3 @@ nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vz :VimuxZoomRunner<CR>
-
-map <Leader>rr :wa<CR> :CargoRun<CR>
-map <Leader>ra :wa<CR> :CargoTestAll<CR>
-map <Leader>rt :wa<CR> :CargoUnitTestCurrentFile<CR>
-map <Leader>rf :wa<CR> :CargoUnitTestFocused<CR>
-
-"Neoformat"
-map <Leader>m :Neoformat<CR>
