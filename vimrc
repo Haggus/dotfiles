@@ -135,9 +135,6 @@ nmap <Esc><Esc> :noh<CR>
 "NerdTree"
 nnoremap <C-n> :NERDTreeToggle<cr>
 
-"NerdCommenter"
-map <C-i> <leader>c<space>
-
 "Move between windows"
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
