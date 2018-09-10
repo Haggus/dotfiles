@@ -162,7 +162,7 @@ map <leader>f :Files<CR>
 map <leader>ll :BLines<CR>
 map <leader>L :Lines<CR>
 map <leader>b :Buffers<CR>
-map <leader>/ :Rg<CR>
+map <leader>/ :Ag<CR>
 map <leader>gs :GFiles?<CR>
 map <leader>gl :BCommits<CR>
 map <leader>c :Commands<CR>
