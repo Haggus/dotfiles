@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.4.0"
+"vimrc v0.5.0"
 "============"
 
 "Leader"
@@ -32,21 +32,15 @@ Plug 'morhetz/gruvbox'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer --rust-completer --clang-completer --system-libclang' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'vimwiki/vimwiki'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'airblade/vim-gitgutter'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
-Plug 'jiangmiao/auto-pairs'
-Plug 'gko/vim-coloresque'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
-Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 filetype plugin indent on
@@ -90,14 +84,8 @@ set showbreak=¬
 "PLUGINS"
 "======="
 
-"Vimwiki"
-let g:vimwiki_hl_headers=1
-let g:vimwiki_hl_cb_checked=1
-let g:vimwiki_folding='syntax'
-let g:vimwiki_list = [{'path': '~/Private/wiki', 'path_html': '~/Private/wiki_html'}]
-
 "YouCompleteMe"
-let g:ycm_rust_src_path  = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 
 "FZF"
 command! -bang -nargs=* Ag
