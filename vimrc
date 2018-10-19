@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.5.0"
+"vimrc v0.5.1"
 "============"
 
 "Leader"
@@ -140,6 +140,9 @@ nnoremap <C-l> <C-w>l
 map <leader>gf :Git! diff<CR>
 map <leader>gt :Git! diff --staged<CR>
 map <leader>gb :Gblame<CR>
+map <leader>gs :GFiles?<CR>
+map <leader>gc :BCommits<CR>
+map <leader>gl :Commits!<CR>
 
 "Tabs"
 map <leader>tn :tabn<CR>
@@ -152,15 +155,13 @@ map <leader>n :cnext<CR>
 map <leader>N :cprev<CR>
 
 "FZF"
-map <leader>F :GFiles<CR>
-map <leader>f :Files<CR>
-map <leader>ll :BLines<CR>
+map <leader>f :GFiles<CR>
+map <leader>F :Files<CR>
+map <leader>l :BLines<CR>
 map <leader>L :Lines<CR>
+map <leader>c :Commands<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
-map <leader>gs :GFiles?<CR>
-map <leader>gl :BCommits<CR>
-map <leader>c :Commands<CR>
 
 "YouCompleteMe"
 nnoremap <leader>gg :YcmCompleter GoTo<CR>
