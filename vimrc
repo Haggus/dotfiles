@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.5.1"
+"vimrc v0.5.2"
 "============"
 
 "Leader"
@@ -91,8 +91,10 @@ let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/
 
 "FZF"
 command! -bang -nargs=* Ag
-  \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview('right:50%'), <bang>0)
+  \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview(), <bang>0)
 command! -bang -nargs=? -complete=dir Files
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 let g:fzf_colors =
