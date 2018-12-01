@@ -36,4 +36,7 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
   eval "$(<~/.ssh-agent-id)"
 fi
 
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
