@@ -27,6 +27,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
 alias ra="ranger"
+alias gs="git status"
 alias t="task"
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
