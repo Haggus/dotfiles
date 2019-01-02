@@ -5,7 +5,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="afowler"
 
 plugins=(
-  git nvm
+  git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -27,7 +27,7 @@ alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
 alias ra="ranger"
-alias gs="git status"
+alias t="task"
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
   ssh-agent > ~/.ssh-agent-id
@@ -35,5 +35,8 @@ fi
 if [[ "$SSH_AGENT_PID" == "" ]]; then
   eval "$(<~/.ssh-agent-id)"
 fi
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
