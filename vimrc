@@ -85,7 +85,7 @@ set showbreak=¬
 "======="
 
 "YouCompleteMe"
-let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
+let g:ycm_rust_src_path = '~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 
 "FZF"
 command! -bang -nargs=* Ag
