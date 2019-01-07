@@ -136,7 +136,7 @@ nnoremap <C-l> <C-w>l
 map <leader>gf :Git! diff<CR>
 map <leader>gt :Git! diff --staged<CR>
 map <leader>gb :Gblame<CR>
-map <leader>gs :GFiles?<CR>
+map <leader>gs :Gstatus<CR>
 map <leader>gc :BCommits<CR>
 map <leader>gl :Commits!<CR>
 
