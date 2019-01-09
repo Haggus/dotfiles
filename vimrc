@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.5.3"
+"vimrc v0.5.4"
 "============"
 
 "Leader"
@@ -130,18 +130,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 "Git"
-map <leader>gf :Git! diff<CR>
-map <leader>gt :Git! diff --staged<CR>
 map <leader>gb :Gblame<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gc :BCommits<CR>
 map <leader>gl :Commits!<CR>
-
-"Tabs"
-map <leader>tn :tabn<CR>
-map <leader>tp :tabp<CR>
-map <leader>tt :tabnew<CR>
-map <leader>tc :tabclose<CR>
 
 "Searches"
 map <leader>n :cnext<CR>
@@ -150,9 +142,6 @@ map <leader>N :cprev<CR>
 "FZF"
 map <leader>f :GFiles<CR>
 map <leader>F :Files<CR>
-map <leader>l :BLines<CR>
-map <leader>L :Lines<CR>
-map <leader>c :Commands<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 
@@ -163,4 +152,3 @@ nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 "Vimux"
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
-map <Leader>vz :VimuxZoomRunner<CR>
