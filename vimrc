@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.5.4"
+"vimrc v0.6.0"
 "============"
 
 "Leader"
@@ -41,6 +41,7 @@ Plug 'benmills/vimux'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
 call plug#end()
 filetype plugin indent on
@@ -81,9 +82,6 @@ set showbreak=¬
 "PLUGINS"
 "======="
 
-"YouCompleteMe"
-let g:ycm_rust_src_path = '~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
-
 "FZF"
 command! -bang -nargs=* Ag
   \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview(), <bang>0)
@@ -93,19 +91,32 @@ command! -bang -nargs=? -complete=dir GFiles
   \ call fzf#vim#gitfiles(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 "Use colorscheme colors for FZF"
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+let g:fzf_colors = {
+\ 'fg':      ['fg', 'Normal'],
+\ 'bg':      ['bg', 'Normal'],
+\ 'hl':      ['fg', 'Comment'],
+\ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+\ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+\ 'hl+':     ['fg', 'Statement'],
+\ 'info':    ['fg', 'PreProc'],
+\ 'prompt':  ['fg', 'Conditional'],
+\ 'pointer': ['fg', 'Exception'],
+\ 'marker':  ['fg', 'Keyword'],
+\ 'spinner': ['fg', 'Label'],
+\ 'header':  ['fg', 'Comment'],
+\}
+
+"ALE"
+let g:ale_linters = {
+\ 'javascript': ['eslint'],
+\}
+
+"LanguageClient"
+let g:LanguageClient_serverCommands = {
+\ 'rust':           ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+\ 'javascript':     ['javascript-typescript-stdio'],
+\ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
+\}
 
 "========="
 "KEYBINDINGS"
@@ -145,9 +156,10 @@ map <leader>F :GFiles<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 
-"YouCompleteMe"
-nnoremap <leader>gg :YcmCompleter GoTo<CR>
-nnoremap <leader>gd :YcmCompleter GetDoc<CR>
+"LanguageClient"
+nnoremap <leader>gg :call LanguageClient#textDocument_hover()<CR>
+nnoremap <leader>gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <leader>gr :call LanguageClient#textDocument_rename()<CR>
 
 "Vimux"
 map <Leader>vp :VimuxPromptCommand<CR>
