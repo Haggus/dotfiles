@@ -140,8 +140,8 @@ map <leader>n :cnext<CR>
 map <leader>N :cprev<CR>
 
 "FZF"
-map <leader>f :GFiles<CR>
-map <leader>F :Files<CR>
+map <leader>f :Files<CR>
+map <leader>F :GFiles<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 
