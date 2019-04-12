@@ -110,6 +110,12 @@ let g:fzf_colors = {
 let g:ale_linters = {
 \ 'javascript': ['eslint'],
 \}
+let g:ale_fixers = {
+\ '*': ['remove_trailing_lines', 'trim_whitespace'],
+\ 'javascript': ['prettier'],
+\ 'css': ['prettier'],
+\ 'rust': ['rustfmt'],
+\}
 
 "LanguageClient"
 let g:LanguageClient_serverCommands = {
@@ -164,3 +170,6 @@ nnoremap <leader>gr :call LanguageClient#textDocument_rename()<CR>
 "Vimux"
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
+
+"ALE"
+map <Leader>x :ALEFix<CR>
