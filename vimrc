@@ -23,6 +23,7 @@ set list
 set backupcopy=yes
 set undofile
 set undodir=~/.vim/undodir
+set clipboard+=unnamedplus
 
 "vim-plug"
 filetype off
