@@ -15,6 +15,7 @@ OPTIONS=hitpointbar
 OPTIONS=msghistory:50
 OPTIONS=msg_window:reversed
 OPTIONS=runmode:walk
+OPTIONS=autodescribe
 
 # Ensure changes will be shown for a few turns after they happen.
 OPTIONS=statushilites:10
