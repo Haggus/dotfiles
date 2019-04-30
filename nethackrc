@@ -15,6 +15,7 @@ OPTIONS=hitpointbar
 OPTIONS=msghistory:50
 OPTIONS=msg_window:reversed
 OPTIONS=runmode:walk
+OPTIONS=autodescribe
 
 # Ensure changes will be shown for a few turns after they happen.
 OPTIONS=statushilites:10
@@ -61,18 +62,24 @@ MENUCOLOR=" blessed .* \(weapon in hands?\)"=green&underline
 MENUCOLOR=" blessed .* \(wielded.*\)"=green&underline
 MENUCOLOR=" blessed .* \(being worn\)"=green&underline
 MENUCOLOR=" blessed .* \(in quiver\)"=green&underline
+MENUCOLOR=" blessed .* \(on left hand\)"=green&underline
+MENUCOLOR=" blessed .* \(on right hand\)"=green&underline
 
 MENUCOLOR=" uncursed "=yellow
 MENUCOLOR=" uncursed .* \(weapon in hands?\)"=yellow&underline
 MENUCOLOR=" uncursed .* \(wielded.*\)"=yellow&underline
 MENUCOLOR=" uncursed .* \(being worn\)"=yellow&underline
 MENUCOLOR=" uncursed .* \(in quiver\)"=yellow&underline
+MENUCOLOR=" uncursed .* \(on left hand\)"=yellow&underline
+MENUCOLOR=" uncursed .* \(on right hand\)"=yellow&underline
 
 MENUCOLOR=" cursed "=red
 MENUCOLOR=" cursed .* \(weapon in hand?\)"=red&underline
 MENUCOLOR=" cursed .* \(wielded.*\)"=red&underline
 MENUCOLOR=" cursed .* \(being worn\)"=red&underline
 MENUCOLOR=" cursed .* \(in quiver\)"=red&underline
+MENUCOLOR=" cursed .* \(on left hand\)"=red&underline
+MENUCOLOR=" cursed .* \(on right hand\)"=red&underline
 
 MENUCOLOR=" holy "=green
 MENUCOLOR=" unholy "=red
