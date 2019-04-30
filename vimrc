@@ -29,7 +29,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer --rust-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer --rust-completer --clangd-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ntpeters/vim-better-whitespace'
