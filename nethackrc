@@ -57,6 +57,13 @@ OPTIONS=hilite_status:hunger/3/orange
 OPTIONS=hilite_status:hunger/4/red&inverse
 OPTIONS=hilite_status:hunger/5/red
 
+MENUCOLOR=" .* \(weapon in hands?\)"=white&underline
+MENUCOLOR=" .* \(wielded.*\)"=white&underline
+MENUCOLOR=" .* \(being worn\)"=white&underline
+MENUCOLOR=" .* \(in quiver\)"=white&underline
+MENUCOLOR=" .* \(on left hand\)"=white&underline
+MENUCOLOR=" .* \(on right hand\)"=white&underline
+
 MENUCOLOR=" blessed "=green
 MENUCOLOR=" blessed .* \(weapon in hands?\)"=green&underline
 MENUCOLOR=" blessed .* \(wielded.*\)"=green&underline
