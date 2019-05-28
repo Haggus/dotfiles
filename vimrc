@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.2"
+"vimrc v0.6.3"
 "============"
 
 "Leader"
@@ -41,7 +41,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
 call plug#end()
 filetype plugin indent on
@@ -117,13 +116,6 @@ let g:ale_fixers = {
 \ 'rust': ['rustfmt'],
 \}
 
-"LanguageClient"
-let g:LanguageClient_serverCommands = {
-\ 'rust':           ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
-\ 'javascript':     ['javascript-typescript-stdio'],
-\ 'javascript.jsx': ['tcp://127.0.0.1:2089'],
-\}
-
 "========="
 "KEYBINDINGS"
 "========="
@@ -155,11 +147,6 @@ map <leader>f :Files<CR>
 map <leader>F :GFiles<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
-
-"LanguageClient"
-nnoremap <leader>gg :call LanguageClient#textDocument_hover()<CR>
-nnoremap <leader>gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <leader>gr :call LanguageClient#textDocument_rename()<CR>
 
 "ALE"
 map <Leader>x :ALEFix<CR>
