@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.0"
+"vimrc v0.6.1"
 "============"
 
 "Leader"
@@ -128,12 +128,6 @@ let g:LanguageClient_serverCommands = {
 "========="
 "KEYBINDINGS"
 "========="
-
-"Disable Arrows"
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
 
 "Quickly clear selection highlight"
 nmap <Esc><Esc> :noh<CR>
