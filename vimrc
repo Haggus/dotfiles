@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.1"
+"vimrc v0.6.2"
 "============"
 
 "Leader"
@@ -38,7 +38,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'benmills/vimux'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
@@ -161,10 +160,6 @@ map <leader>/ :Ag<CR>
 nnoremap <leader>gg :call LanguageClient#textDocument_hover()<CR>
 nnoremap <leader>gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <leader>gr :call LanguageClient#textDocument_rename()<CR>
-
-"Vimux"
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
 
 "ALE"
 map <Leader>x :ALEFix<CR>
