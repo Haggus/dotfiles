@@ -149,4 +149,4 @@ map <leader>b :Buffers<CR>
 map <leader>/ :Ag<CR>
 
 "ALE"
-map <Leader>x :ALEFix<CR>
+map <leader>x :ALEFix<CR>
