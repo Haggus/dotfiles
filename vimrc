@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.4"
+"vimrc v0.6.5"
 "============"
 
 "Leader"
@@ -32,7 +32,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer --rust-completer --clangd-completer' }
 Plug 'scrooloose/nerdtree'
-Plug 'ntpeters/vim-better-whitespace'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
