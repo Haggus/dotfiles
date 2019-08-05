@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.5"
+"vimrc v0.6.6"
 "============"
 
 "Leader"
@@ -10,11 +10,7 @@ set modelines=0
 set timeoutlen=1000 ttimeoutlen=0
 set encoding=utf-8
 set scrolloff=8
-set autoindent
-set showmode
-set showcmd
 set hidden
-set wildmenu
 set wildmode=list:longest
 set laststatus=2
 set visualbell
@@ -58,20 +54,15 @@ set expandtab
 set ignorecase
 set smartcase
 set gdefault
-set incsearch
 set inccommand=split
 set showmatch
-set hlsearch
-set magic
 
 "Cursor"
 set lazyredraw
-set ruler
 set matchtime=3
 set cursorline
 
 "Better Line Wraps"
-set wrap
 set linebreak
 set showbreak=¬
 
