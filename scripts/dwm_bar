@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+check_email() {
+  personal=$(du -a ~/mail/personal/Inbox/new/* 2>/dev/null | wc -l)
+  company=$(du -a ~/mail/company/Inbox/new/* 2>/dev/null | wc -l)
+  work=$(du -a ~/mail/work/Inbox/new/* 2>/dev/null | wc -l)
+
+  echo "Mail: "$personal":"$company":"$work
+}
+
+get_status() {
+  echo " "$(check_email)" | "$(date '+%Y %b %d (%a) %I:%M:%S %p')" "
+}
+
+while :; do
+  xsetroot -name "$(get_status)"
+
+  sleep 1s
+done
