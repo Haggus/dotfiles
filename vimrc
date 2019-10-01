@@ -92,7 +92,7 @@ let g:fzf_colors = {
 
 "ALE"
 let g:ale_linters = {
-\ 'javascript': ['eslint'],
+\ 'javascriptreact': ['eslint'],
 \}
 let g:ale_fixers = {
 \ '*': ['remove_trailing_lines', 'trim_whitespace'],
