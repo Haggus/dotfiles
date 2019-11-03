@@ -1,22 +1,13 @@
 "============"
-"vimrc v0.6.6"
+"vimrc v0.6.7"
 "============"
 
 "Leader"
 let mapleader=','
 
 "General"
-set modelines=0
-set timeoutlen=1000 ttimeoutlen=0
-set encoding=utf-8
-set scrolloff=8
-set hidden
-set wildmode=list:longest
-set laststatus=2
-set visualbell
 set listchars=tab:»·,trail:·,extends:>,precedes:<
 set list
-set backupcopy=yes
 set undofile
 set undodir=~/.vim/undodir
 set clipboard+=unnamedplus
