@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.7"
+"vimrc v0.6.8"
 "============"
 
 "Leader"
@@ -11,6 +11,7 @@ set list
 set undofile
 set undodir=~/.vim/undodir
 set clipboard+=unnamedplus
+set hidden
 
 "vim-plug"
 filetype off
