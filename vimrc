@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.8"
+"vimrc v0.6.9"
 "============"
 
 "Leader"
@@ -62,10 +62,6 @@ set showbreak=¬
 "PLUGINS"
 "======="
 
-"FZF"
-command! -bang -nargs=* Ag
-  \ call fzf#vim#ag(<q-args>, fzf#vim#with_preview(), <bang>0)
-
 "Use colorscheme colors for FZF"
 let g:fzf_colors = {
 \ 'fg':      ['fg', 'Normal'],
@@ -124,7 +120,7 @@ map <leader>N :cprev<CR>
 map <leader>f :Files<CR>
 map <leader>F :GFiles<CR>
 map <leader>b :Buffers<CR>
-map <leader>/ :Ag<CR>
+map <leader>/ :Rg<CR>
 
 "ALE"
 map <leader>x :ALEFix<CR>
