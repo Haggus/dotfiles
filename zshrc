@@ -39,7 +39,7 @@ gnn() {
       --ansi --preview="$_viewGitLogLine" \
         --header "Press Enter to view, ALT-Y to copy hash" \
         --bind "enter:execute:$_viewGitLogLine   | less -R" \
-        --bind "alt-y:execute:$_gitLogLineToHash | xclip"
+        --bind "alt-y:execute:$_gitLogLineToHash | xclip -sel clip"
 }
 
 # aliases
