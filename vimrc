@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.6.9"
+"vimrc v0.7.0"
 "============"
 
 "Leader"
@@ -18,7 +18,6 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --ts-completer --rust-completer --clangd-completer' }
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
