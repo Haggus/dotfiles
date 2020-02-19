@@ -6,8 +6,7 @@
 [core]
   editor = nvim
 [alias]
-  ci = commit -v
-  ss = status -sb
+  ci = commit -v -n
   st = status
   ff = diff
   fs = diff --staged
