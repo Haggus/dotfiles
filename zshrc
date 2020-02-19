@@ -16,10 +16,10 @@ export LANG=en_US.UTF-8
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-  ssh-agent > ~/.ssh-agent-id
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
 fi
-if [[ "$SSH_AGENT_PID" == "" ]]; then
-  eval "$(<~/.ssh-agent-id)"
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    eval "$(<"$XDG_RUNTIME_DIR/ssh-agent.env")"
 fi
 
 if [[ -n $SSH_CONNECTION ]]; then
