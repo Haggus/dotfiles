@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.7.0"
+"vimrc v0.7.1"
 "============"
 
 "Leader"
@@ -18,7 +18,6 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-cursorword'
@@ -95,9 +94,6 @@ let g:ale_fixers = {
 
 "Quickly clear selection highlight"
 nmap <Esc><Esc> :noh<CR>
-
-"NerdTree"
-nnoremap <C-n> :NERDTreeToggle<cr>
 
 "Move between windows"
 nnoremap <C-h> <C-w>h
