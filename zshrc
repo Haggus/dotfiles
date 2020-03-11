@@ -49,6 +49,7 @@ alias v="nvim"
 alias ra="ranger"
 alias gs="git status"
 alias t="task"
+alias jstags="ctags -R app config && sed -i ‘’ -E ‘/^(if|switch|function|module\.exports|it|describe).+language:js$/d’ tags"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
