@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.7.1"
+"vimrc v0.7.2"
 "============"
 
 "Leader"
@@ -20,7 +20,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
-Plug 'itchyny/vim-cursorword'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
