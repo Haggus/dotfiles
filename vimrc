@@ -23,7 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 filetype plugin indent on
