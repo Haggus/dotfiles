@@ -10,12 +10,20 @@ get_freem() {
   echo " "$(free -m | awk 'NR==2 { print $7 }')" MB "
 }
 
+get_battery() {
+  for battery in $(ls /sys/class/power_supply/ | grep 'BAT')
+  do
+    percentage=$(cat /sys/class/power_supply/$battery/capacity)
+    echo " "$battery": "$percentage" "
+  done
+}
+
 get_date() {
   echo " "$(date '+%Y %b %d (%a) %I:%M:%S %p')" "
 }
 
 while :; do
-  xsetroot -name "$(get_loadavg) $(get_freem) $(get_date)"
+  xsetroot -name "$(get_loadavg) $(get_freem) $(get_battery) $(get_date)"
 
   sleep 1s
 done
