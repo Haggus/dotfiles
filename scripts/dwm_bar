@@ -18,12 +18,19 @@ get_battery() {
   done
 }
 
+get_wireless() {
+  wifi_device=$(nmcli device | grep wifi)
+  if [ -n "$wifi_device" ]; then
+    echo " wifi_connection "
+  fi
+}
+
 get_date() {
   echo " "$(date '+%Y %b %d (%a) %I:%M:%S %p')" "
 }
 
 while :; do
-  xsetroot -name "$(get_loadavg) $(get_freem) $(get_battery) $(get_date)"
+  xsetroot -name "$(get_loadavg) $(get_freem) $(get_battery) $(get_wireless) $(get_date)"
 
   sleep 1s
 done
