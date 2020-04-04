@@ -6,7 +6,7 @@ xset s off
 xset -dpms
 xset s noblank
 
-dwm_bar &
+slstatus &
 dropbox &
 flameshot &
 
