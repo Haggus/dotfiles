@@ -7,7 +7,7 @@ xset -dpms
 xset s noblank
 
 slstatus &
-dropbox &
+nextcloud --background &
 flameshot &
 
 xsetroot -solid "#3c3836"
