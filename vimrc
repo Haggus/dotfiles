@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.7.3"
+"vimrc v0.7.4"
 "============"
 
 "Leader"
@@ -90,10 +90,6 @@ map <leader>gb :Gblame<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>gc :BCommits<CR>
 map <leader>gl :Commits!<CR>
-
-"Searches"
-map <leader>n :cnext<CR>
-map <leader>N :cprev<CR>
 
 "FZF"
 map <leader>f :Files<CR>
