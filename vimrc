@@ -31,7 +31,6 @@ filetype plugin indent on
 "Colors & Themes"
 syntax enable
 colorscheme gruvbox
-hi CursorLine ctermbg=236
 
 "Tabs"
 set tabstop=2
@@ -49,7 +48,6 @@ set showmatch
 "Cursor"
 set lazyredraw
 set matchtime=3
-set cursorline
 
 "Better Line Wraps"
 set linebreak
