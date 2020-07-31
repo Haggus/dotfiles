@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.7.5"
+"vimrc v0.8.0"
 "============"
 
 "Leader"
@@ -19,7 +19,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -82,12 +81,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-"Git"
-map <leader>gb :Gblame<CR>
-map <leader>gs :Gstatus<CR>
-map <leader>gc :BCommits<CR>
-map <leader>gl :Commits!<CR>
 
 "FZF"
 map <leader>f :Files<CR>
