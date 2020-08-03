@@ -1,5 +1,5 @@
 "============"
-"vimrc v0.8.0"
+"vimrc v0.9.0"
 "============"
 
 "Leader"
@@ -19,7 +19,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
