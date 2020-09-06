@@ -1,6 +1,6 @@
-"============"
-"vimrc v0.9.0"
-"============"
+"============="
+"vimrc v0.10.0"
+"============="
 
 "Leader"
 let mapleader=','
@@ -21,7 +21,6 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'dense-analysis/ale'
 
 call plug#end()
 filetype plugin indent on
@@ -51,27 +50,6 @@ set matchtime=3
 set linebreak
 set showbreak=¬
 
-"======="
-"PLUGINS"
-"======="
-
-"ALE"
-let g:ale_linters = {
-\ 'javascript': ['eslint'],
-\ 'javascriptreact': ['eslint'],
-\}
-let g:ale_fixers = {
-\ '*': ['remove_trailing_lines', 'trim_whitespace'],
-\ 'javascript': ['prettier'],
-\ 'javascriptreact': ['prettier'],
-\ 'css': ['prettier'],
-\ 'rust': ['rustfmt'],
-\}
-
-"========="
-"KEYBINDINGS"
-"========="
-
 "Quickly clear selection highlight"
 nmap <Esc><Esc> :noh<CR>
 
@@ -86,6 +64,3 @@ map <leader>f :Files<CR>
 map <leader>F :GFiles<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Rg<CR>
-
-"ALE"
-map <leader>x :ALEFix<CR>
