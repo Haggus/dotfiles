@@ -1,5 +1,5 @@
 "============="
-"vimrc v0.10.1"
+"vimrc v0.10.2"
 "============="
 
 let mapleader=','
@@ -8,6 +8,7 @@ set undofile
 set undodir=~/.vim/undodir
 set clipboard+=unnamedplus
 set hidden
+set inccommand=split
 
 "vim-plug"
 filetype off
@@ -30,13 +31,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-
-"Search"
-set ignorecase
-set smartcase
-set gdefault
-set inccommand=split
-set showmatch
 
 "Cursor"
 set lazyredraw
