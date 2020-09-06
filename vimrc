@@ -1,13 +1,9 @@
 "============="
-"vimrc v0.10.0"
+"vimrc v0.10.1"
 "============="
 
-"Leader"
 let mapleader=','
 
-"General"
-set listchars=tab:»·,trail:·,extends:>,precedes:<
-set list
 set undofile
 set undodir=~/.vim/undodir
 set clipboard+=unnamedplus
