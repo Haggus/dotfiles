@@ -1,13 +1,17 @@
 "============="
-"vimrc v0.10.2"
+"vimrc v0.10.3"
 "============="
 
 let mapleader=','
 
+set hidden
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 set undofile
 set undodir=~/.vim/undodir
 set clipboard+=unnamedplus
-set hidden
 set inccommand=split
 
 "vim-plug"
@@ -25,20 +29,6 @@ filetype plugin indent on
 "Colors & Themes"
 syntax enable
 colorscheme gruvbox
-
-"Tabs"
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-
-"Cursor"
-set lazyredraw
-set matchtime=3
-
-"Better Line Wraps"
-set linebreak
-set showbreak=¬
 
 "Quickly clear selection highlight"
 nmap <Esc><Esc> :noh<CR>
