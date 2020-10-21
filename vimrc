@@ -1,5 +1,5 @@
 "============="
-"vimrc v0.10.3"
+"vimrc v0.11.0"
 "============="
 
 let mapleader=','
@@ -19,7 +19,6 @@ filetype off
 call plug#begin('~/.vim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
-Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
