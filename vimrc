@@ -1,5 +1,5 @@
 "============="
-"vimrc v0.11.0"
+"vimrc v0.12.0"
 "============="
 
 let mapleader=','
@@ -18,16 +18,13 @@ set inccommand=split
 filetype off
 call plug#begin('~/.vim/plugged')
 
-Plug 'gruvbox-community/gruvbox'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
 filetype plugin indent on
 
-"Colors & Themes"
 syntax enable
-colorscheme gruvbox
 
 "Quickly clear selection highlight"
 nmap <Esc><Esc> :noh<CR>
