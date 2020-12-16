@@ -29,12 +29,6 @@ syntax enable
 "Quickly clear selection highlight"
 nmap <Esc><Esc> :noh<CR>
 
-"Move between windows"
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 "FZF"
 map <leader>f :GFiles<CR>
 map <leader>F :Files<CR>
