@@ -1,6 +1,8 @@
 [user]
   email = matt.mrowiec@gmail.com
   name = Mateusz Mrowiec
+[pull]
+  rebase = false
 [push]
   default = simple
 [core]
