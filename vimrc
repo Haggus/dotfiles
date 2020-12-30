@@ -26,11 +26,7 @@ filetype plugin indent on
 
 syntax enable
 
-"Quickly clear selection highlight"
-nmap <Esc><Esc> :noh<CR>
-
-"FZF"
-map <leader>f :GFiles<CR>
-map <leader>F :Files<CR>
+map <leader>f :Files<CR>
+map <leader>F :GFiles<CR>
 map <leader>b :Buffers<CR>
 map <leader>/ :Rg<CR>
