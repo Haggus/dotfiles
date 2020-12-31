@@ -10,4 +10,4 @@ slstatus &
 nextcloud --background &
 flameshot &
 
-xsetroot -solid "#3c3836"
+xsetroot -solid "#282a2e"
