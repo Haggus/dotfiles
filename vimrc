@@ -1,7 +1,3 @@
-"============="
-"vimrc v0.12.0"
-"============="
-
 let mapleader=','
 
 set hidden
@@ -14,7 +10,6 @@ set undodir=~/.vim/undodir
 set clipboard+=unnamedplus
 set inccommand=split
 
-"vim-plug"
 filetype off
 call plug#begin('~/.vim/plugged')
 
