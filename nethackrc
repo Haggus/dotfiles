@@ -1,3 +1,5 @@
+OPTIONS=windowtype:curses
+OPTIONS=perm_invent
 OPTIONS=boulder:0
 OPTIONS=autodig
 OPTIONS=color
