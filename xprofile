@@ -9,5 +9,6 @@ xset s noblank
 slstatus &
 nextcloud --background &
 flameshot &
+dunst &
 
 xsetroot -solid "#282a2e"
